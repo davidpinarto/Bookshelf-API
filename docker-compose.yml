@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  bookshelf-api:
+    image: bookshelf-api
+    restart: always
+    ports:
+      - 9000:9000
+    working_dir: /app
