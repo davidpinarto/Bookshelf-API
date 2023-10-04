@@ -2,7 +2,8 @@
 In this API You can Create, Read, Update, and Delete a Book.
 
 ## How to deploy Bookshelf-API
-- Install Node.js
+### Without Docker
+- Install Node.js <br />
   The first thing You should have to deploy this app is Node.js (v14.x above), I develop this app with Node.js v19.7.0.
 - Open Your terminal.
 - Go to Bookshelf-API root directory `(ex. cd ~/Bookshelf-API)` .
@@ -12,6 +13,22 @@ In this API You can Create, Read, Update, and Delete a Book.
   npm run start (for production).
   npm run start-dev (for development).
   ```
+
+### With Docker
+- Install Docker
+- Then run this command on terminal (please make sure You already on root folder that contain Dockerfile): <br />
+  ```
+  docker build -t bookshelf-api .
+  ```
+- After docker build bookshelf-api image, You should use docker compose to run the container on docker, run this command to run the container:
+  ```
+  docker compose up -d
+  ``` 
+- That's it! bookshelf-api now run on docker, You can check it with this command below:
+  ```
+  docker ps -a
+  ```
+
 ## API Documentation
 ### Add Book
 - Method: POST
