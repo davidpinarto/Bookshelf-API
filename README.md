@@ -30,6 +30,9 @@ In this API You can Create, Read, Update, and Delete a Book.
   ```
 
 ## API Documentation
+### Base URL
+[https://bookshelf-api.dapi.my.id](https://bookshelf-api.dapi.my.id)
+
 ### Add Book
 - Method: POST
 - URL: /books
